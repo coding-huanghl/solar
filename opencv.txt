@@ -18,10 +18,6 @@ int main(int argc, char** argv)
 		cols *= rows;         
 		rows = 1;
 	}
-
-	// 每个像素点的每个通道255取反
-	uchar* p1;
-	uchar* p2;
 	for (int row = 0; row < rows; row++) {
 		p1 = image.ptr<uchar>(row);// 获取像素指针
 		p2 = invertImage.ptr<uchar>(row);
