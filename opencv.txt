@@ -31,22 +31,6 @@ int main(int argc, char** argv)
 			p1++;
 		}
 	}
-
-	// create windows
-	namedWindow("My Test", CV_WINDOW_AUTOSIZE);
-	namedWindow("My Invert Image", CV_WINDOW_AUTOSIZE);
-
-	// display image
-	imshow("My Test", image);
-	imshow("My Invert Image", invertImage);
-
-	// 关闭
-	waitKey(0);
-	destroyWindow("My Test");
-	destroyWindow("My Invert Image");
-	return 0;
 }
-
-
 -- by coding 
 test
